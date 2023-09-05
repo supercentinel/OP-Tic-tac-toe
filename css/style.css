@@ -1,0 +1,29 @@
+body {
+    font-family: hack;
+    font-size: 16px;
+    margin: 0;
+    background-color: #665;
+}
+
+header {
+    background-color: #666;
+    padding: 1.5em;
+    text-align: center;
+    font-size: 1.2em;
+    color: bisque;
+}
+
+#board {
+    border: 2px ridge bisque;
+    margin: 10em auto;
+    margin-top: 2.5em;
+    width: 30em;
+    height: 30em;
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+}
+
+#board > * {
+    border: 1px solid bisque;
+}
+
