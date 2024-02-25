@@ -1,5 +1,8 @@
-body {
+* {
     font-family: hack;
+}
+
+body {
     font-size: 16px;
     margin: 0;
     background-color: #665;
@@ -23,7 +26,26 @@ header {
     grid-template: repeat(3, 1fr) / repeat(3, 1fr);
 }
 
-#board > * {
-    border: 1px solid bisque;
+#turn {
+    text-align: center;
+    font-size: 2.0em;
+    color: bisque;
+    background-color: #664;
 }
 
+#board > * {
+    display: flex;
+    border: 2px solid bisque;
+}
+
+#board > div > img {
+    flex: 0 0 50%;
+    margin-top: 5%;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+    /* correct svg magic to bisque */
+    filter: invert(80%) sepia(80%) saturate(50%);
+}
